@@ -143,7 +143,6 @@ public class main {
         }
         isReplaying = false;
         showGrid();
-
     }
 
     /**
@@ -158,7 +157,6 @@ public class main {
         }
         isReplaying = false;
         showGrid();
-
     }
 
     /**
@@ -173,12 +171,11 @@ public class main {
         }
     }
 
-
     private static void doAdd() {
-        if(commandInt <= grid.size()){
+        if (commandInt <= grid.size()) {
             List input = grid.get(commandInt - 1);
             input.add("X ");
-        }else{
+        } else {
             throwError();
         }
 
@@ -189,13 +186,13 @@ public class main {
      * TODO: add more concise error messages through the function
      * TODO: create Error handling class
      */
-    private static void throwError(){
+    private static void throwError() {
         System.out.println(BAD_COMMAND_ERROR);
         resetUserPrompt();
     }
 
     private static void doRemove() {
-        if(commandInt <= grid.size()) {
+        if (commandInt <= grid.size()) {
             List input = grid.get(commandInt - 1);
             if (input.size() > 0) {
                 input.remove(input.size() - 1);
@@ -205,15 +202,15 @@ public class main {
 
     private static void doMove() {
         //make sure both params are inside the grid slot size
-        if(moveFromCommand <= grid.size() && commandInt <= grid.size()){
+        if (moveFromCommand <= grid.size() && commandInt <= grid.size()) {
             List input = grid.get(moveFromCommand - 1);
             if (input.size() > 0) {
                 input.remove(input.size() - 1);
                 doAdd();
             } else {
-               throwError();
+                throwError();
             }
-        }else{
+        } else {
             throwError();
         }
     }
@@ -309,7 +306,6 @@ public class main {
             error = BAD_COMMAND_ERROR;
             isValid = false;
         }
-
     }
 
     /**
@@ -364,7 +360,6 @@ public class main {
                 } else {
                     error = BAD_INT_ERROR;
                 }
-
             }
         }
         return false;
@@ -405,7 +400,6 @@ public class main {
             moveFromCommand = commandInt;
             commandInt = tempMoveToCommand;
         }
-
         return true;
     }
 }
