@@ -1,6 +1,11 @@
 # rei
 A command line example for robotic slot placements
 
+# to run
+- clone this repository to your local drive
+- on cmd line cd to the cloned folder.  Then to : /out/production/rei
+- run java com.rei.main 
+
 # synopsis
 -This main class was written to show how I approach this problem: 
 Design a command-line program that controls a robotic arm by taking commands that move blocks stacked in a series of slots. After each command, output the state of the slots, with each line of output corresponding to a slot and each X corresponding to a block.
@@ -22,6 +27,7 @@ Commands:
 # comments
 
 ## This is a quick and basic example of how I would approach this problem.   There are several things, if given the time, i would change:
+
 - error handling would be in it's own class and more robust
 - constants would be in their own class
 - the grid would have its own class and most of the methods called in this main class dealing with grid actions would be handled in that object
