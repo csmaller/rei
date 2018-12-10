@@ -26,12 +26,12 @@ Commands:
 
 # comments
 
-## This is a quick and basic example of how I would approach this problem.   There are several things, if given the time, i would change:
+ This is a quick and basic example of how I would approach this problem.   There are several things, if given the time, i would change:
 
 - error handling would be in it's own class and more robust
 - constants would be in their own class
 - the grid would have its own class and most of the methods called in this main class dealing with grid actions would be handled in that object
--- validation would have its own class 
--- Some of the functionality in the main class is a bit rigid. If given the time they would be combined or minimized for code size efficiency
+- validation would have its own class 
+- Some of the functionality in the main class is a bit rigid. If given the time they would be combined or minimized for code size efficiency
 
 
